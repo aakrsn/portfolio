@@ -2,7 +2,7 @@
 
 [Open the revised mockups](design/portfolio-mockups-v4.pdf) · [Project brief](../project_details.md) · [System architecture](system-architecture.md)
 
-The mockups show the full page at 1280px and 390px in light and dark themes. The copy draws on the supplied résumé and the owner’s publication decisions below.
+The mockups show the earlier approved layout at 1280px and 390px. The current header, section titles, and divider treatment are specified below. The copy draws on the supplied résumé and the owner’s publication decisions below.
 
 ## Research and literature review
 
@@ -23,7 +23,7 @@ Recruiters need to find the role, employment history, and technical breadth. Hir
 
 ### Typeface selection
 
-**DIN Condensed Bold** has tall, straight-sided letterforms that give the name the proportions of the supplied reference. The mockups use the installed typeface for the name, role and section headings. Confirm licensed web delivery during implementation. If a fallback is needed, preview its widths and wrapping against the mockups. [DIN Condensed and licensing](https://fonts.adobe.com/fonts/din-condensed) · [Barlow type project](https://github.com/jpt/barlow)
+**DIN Condensed Bold** has tall, straight-sided letterforms that give the name the proportions of the supplied reference. The mockups use the installed typeface for the name, experience summary, and section headings. Confirm licensed web delivery during implementation. If a fallback is needed, preview its widths and wrapping against the mockups. [DIN Condensed and licensing](https://fonts.adobe.com/fonts/din-condensed) · [Barlow type project](https://github.com/jpt/barlow)
 
 **Verdana** is the body and interface face in the mockups. It offers generous spacing and clearly differentiated characters in dates, technical terms and contact labels. Atkinson Hyperlegible Next is also designed for distinct letterforms. Verdana gives the design a readable wide face alongside the narrow headline using a font available in the local environment. Use Verdana with a system sans-serif fallback. [Microsoft’s Verdana notes](https://learn.microsoft.com/en-us/typography/font-list/verdana) · [Braille Institute’s Atkinson Hyperlegible family](https://www.brailleinstitute.org/freefont/)
 
@@ -31,40 +31,40 @@ Use landmarks, logically nested headings, and a skip link to make the same secti
 
 ## Composition
 
-Use the reference for the tall headline proportions. Set Ajay’s name in deep orange on two lines directly on the white or black page background. Place the role, one-sentence introduction, and project link beside the name on desktop and below it on mobile.
+Use the reference for the tall headline proportions. Set Ajay’s name in deep orange on two lines directly on the white or black page background. Place the experience summary, one-sentence introduction, and project link beside the name on desktop and below it on mobile.
 
 ```text
 Desktop
-[Ajay Krishna]                 [Work  Experience  Skills  Contact] [Dark mode]
-AJAY KRISHNA                   AI/ML Engineer
+[AI/ML Engineer]              [Work  Experience  Skills  Contact] [Dark mode]
+AJAY KRISHNA                   2+ years of experience
 ANUGU                          Intro and View projects
-Selected work                 Document QA case study with an inspectable example
+What I’ve built                Document QA case study with an inspectable example
                               Four other Centific projects
 Experience                    Role, dates and deployment scope
 Skills                        Short summary, technical skills disclosure, education
 Let’s talk                    Email, LinkedIn and Phone
 
 Mobile
-[Ajay Krishna] [Dark mode]
+[AI/ML Engineer] [Dark mode]
 [Work  Experience  Skills  Contact]
 AJAY KRISHNA
 ANUGU
-AI/ML Engineer
+2+ years of experience
 Intro and View projects
-Selected work → Experience → Skills → Let’s talk
+What I’ve built → Experience → Skills → Let’s talk
 ```
 
 ## Page hierarchy and copy
 
 ### Header and introduction
 
-The wordmark reads **Ajay Krishna** and links to the top of the page at `/`. Header links read **Work**, **Experience**, **Skills**, and **Contact** and use the approved section anchors in that order. **Work** leads to `#projects`. The theme button reads **Dark mode**.
+The header home link reads **AI/ML Engineer** and links to the top of the page at `/`. Header links read **Work**, **Experience**, **Skills**, and **Contact** and use the approved section anchors in that order. **Work** leads to `#projects`. The theme button reads **Dark mode** and uses an unboxed label with a compact state indicator.
 
-- **Name and role** — Ajay Krishna Anugu · AI/ML Engineer. Visually uppercase the name while keeping its natural capitalization in the document text.
+- **Name and experience** — Ajay Krishna Anugu · 2+ years of experience. Visually uppercase the name while keeping its natural capitalization in the document text.
 - **Introduction** — I build AI systems that help teams find answers in documents, check data quality, and protect personal information.
 - **Action** — **View projects** goes to `#projects`.
 
-### Selected work · `#projects`
+### What I’ve built · `#projects`
 
 Lead with Document QA. Identify Centific as the employer for all five entries, and keep the four other projects as short contribution summaries.
 
@@ -117,18 +117,18 @@ Use the heading **Let’s talk** and the line “Open to full-time roles and fre
 | Content width | 1120px maximum. Use 20px mobile gutters and at least 32px from 768px. |
 | Desktop, 1024px and up | Use one header row. Give the name about 64% of the content width and put the intro alongside it. Place the Document QA story and example side by side. Use a shorter title column and a wider detail column for experience, other project summaries, education, and contact. Use three columns inside the technical skills disclosure. |
 | Tablet, 768–1023px | Stack the name and introduction, use two skill columns, and allow the header to wrap. |
-| Mobile, below 768px | Use one column. Keep the name link and theme switch in the first header row, and the navigation links below it. Allow navigation, steps, metadata and actions to wrap at 320px. |
-| Spacing | Use 76px of whitespace around major section boundaries on desktop and 48px on mobile. Align the name to the page content margin. |
-| Display | DIN Condensed Bold. Name 140px at 1280px, 68px at 390px, and 62px at 320px. Use a line-height of about 0.85 and allow additional lines with larger user settings. Use 72px desktop and 52px mobile for section headings, 46px desktop and 42px mobile for the role, and 48px desktop and 41px mobile for the featured project. |
+| Mobile, below 768px | Use one column. Keep the home link and theme switch in the first header row, and the navigation links below it. Allow navigation, steps, metadata and actions to wrap at 320px. |
+| Spacing | Separate sections and project entries with whitespace and type hierarchy. Set the section spacing unit to 76px on desktop and 48px on mobile. Align the name to the page content margin. |
+| Display | DIN Condensed Bold. Name 140px at 1280px, 68px at 390px, and 62px at 320px. Use a line-height of about 0.85 and allow additional lines with larger user settings. Use 72px desktop and 52px mobile for section headings, 46px desktop and 42px mobile for the experience summary, and 48px desktop and 41px mobile for the featured project. |
 | Reading and controls | Verdana regular for body at 17px with 27–28px line-height. Use 16px for skill lists, 19–21px bold for project and role labels, and at least 14px for navigation, controls, stacks, and dates. Specify sizes with rem, and keep long reading blocks to about 66–75 characters. |
-| Components | Square action buttons and solid 2px outlines and rules. Project entries use headings and short descriptions. |
+| Components | Use square action buttons. Let the example label and spacing distinguish the fictional example. Group each project heading with its description. |
 
 ### Theme colors and contrast
 
 | Role | Light theme | Dark theme |
 | --- | --- | --- |
 | Page background | Pure white `#FFFFFF` | Pure black `#000000` |
-| Page text, rules, and outlines | Pure black `#000000` | Pure white `#FFFFFF` |
+| Page text and control outlines | Pure black `#000000` | Pure white `#FFFFFF` |
 | Name text, primary action fills, and accents | Deep orange `#CC4C00` | Deep orange `#CC4C00` |
 | Text on orange | Pure white `#FFFFFF` | Pure white `#FFFFFF` |
 
