@@ -1,6 +1,6 @@
 # Ajay Krishna Anugu · AI/ML Engineering Portfolio
 
-A single-page portfolio built with FastAPI, HTML, CSS, and JavaScript. It opens with selected work, including a fictional Document QA example and an expandable source passage.
+A single-page portfolio built with FastAPI, HTML, CSS, and JavaScript. It opens with selected work, including a Document QA case study.
 
 ## Run locally
 

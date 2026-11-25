@@ -41,7 +41,7 @@
 
 ### FrontEnd Design
 
-[Frontend design specification](docs/frontend-design.md) · [Revised desktop and mobile mockups](docs/design/portfolio-mockups-v4.pdf)
+[Frontend design specification](docs/frontend-design.md) · [Earlier desktop and mobile mockups](docs/design/portfolio-mockups-v4.pdf)
 
 #### Design preferences
 
@@ -49,7 +49,7 @@
 - Use only pure white, pure black, and one deep saturated orange in both modes.
 - Use the supplied screenshot as a reference for bold, tall condensed lettering. Set the name in deep orange directly on the page background.
 - Keep the copy concise and give each section a distinct purpose.
-- Lead with selected work and use an inspectable example to show how the featured project works. Keep motion brief, interaction-driven, and responsive to reduced-motion preferences.
+- Lead with selected work and explain the problem and contribution for the featured project. Keep motion brief, interaction-driven, and responsive to reduced-motion preferences.
 
 ### Implementation Plan
 

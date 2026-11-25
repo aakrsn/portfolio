@@ -1,8 +1,8 @@
 # Portfolio frontend design
 
-[Open the revised mockups](design/portfolio-mockups-v4.pdf) · [Project brief](../project_details.md) · [System architecture](system-architecture.md)
+[Earlier build mockups](design/portfolio-mockups-v4.pdf) · [Project brief](../project_details.md) · [System architecture](system-architecture.md)
 
-The mockups show the earlier approved layout at 1280px and 390px. The current header, section titles, and divider treatment are specified below. The copy draws on the supplied résumé and the owner’s publication decisions below.
+The mockups show the earlier approved layout at 1280px and 390px. The current layout, content, and styling are specified below. The copy draws on the supplied résumé and the owner’s publication decisions below.
 
 ## Research and literature review
 
@@ -10,9 +10,9 @@ Recruiters need to find the role, employment history, and technical breadth. Hir
 
 ### Portfolio examples
 
-- Brittany Chiang gives selected projects a short description, a screenshot where one is available, and a way to explore the work. Give the best project room for an example readers can inspect, and keep the employment chronology separate. [Brittany Chiang’s projects](https://brittanychiang.com/#projects)
-- Julia Evans describes technical projects by what someone can do with them and points readers to usable examples. Use the annotator’s question as the entry point for Document QA. [Julia Evans’s projects](https://jvns.ca/projects/)
-- Simon Willison’s Datasette project site explains who the tool serves and gives readers something to try. Use a fictional question, answer, and source passage to make the retrieval idea tangible. [Datasette](https://datasette.io/)
+- Brittany Chiang gives selected projects a short description, a screenshot where one is available, and a way to explore the work. Give the best project more space and keep the employment chronology separate. [Brittany Chiang’s projects](https://brittanychiang.com/#projects)
+- Julia Evans describes technical projects by what someone can do with them and points readers to usable examples. Lead the Document QA description with the annotators’ task. [Julia Evans’s projects](https://jvns.ca/projects/)
+- Simon Willison’s Datasette project site explains who the tool serves and gives readers something to try. Use concrete descriptions of what readers can do with each project. [Datasette](https://datasette.io/)
 
 ### Earlier layout references
 
@@ -38,7 +38,7 @@ Desktop
 [AI/ML Engineer]              [Work  Experience  Skills  Contact] [Dark mode]
 AJAY KRISHNA                   2+ years of experience
 ANUGU                          Intro and View projects
-What I’ve built                Document QA case study with an inspectable example
+What I’ve built                Document QA case study
                               Four other Centific projects
 Experience                    Role, dates and deployment scope
 Skills                        Short summary, technical skills disclosure, education
@@ -71,7 +71,6 @@ Lead with Document QA. Identify Centific as the employer for all five entries, a
 - **The problem** — Annotators needed to find specific task requirements in client-provided documents.
 - **What I built** — I built a retrieval-augmented question-answering system that finds relevant passages and uses them to answer annotators’ questions.
 - **Tools** — LangChain, FAISS, Gradio.
-- **Fictional example** — The question is “What should I do if an image is too blurry to label?” The answer is “Flag the image for review and leave its label blank.” The **Source passage** disclosure shows the relevant excerpt from a fictional annotation guide. Label it as fictional beside the question and answer.
 
 | Project | Contribution |
 | --- | --- |
@@ -115,13 +114,13 @@ Use the heading **Let’s talk** and the line “Open to full-time roles and fre
 | Element | Specification |
 | --- | --- |
 | Content width | 1120px maximum. Use 20px mobile gutters and at least 32px from 768px. |
-| Desktop, 1024px and up | Use one header row. Give the name about 64% of the content width and put the intro alongside it. Place the Document QA story and example side by side. Use a shorter title column and a wider detail column for experience, other project summaries, education, and contact. Use three columns inside the technical skills disclosure. |
+| Desktop, 1024px and up | Use one header row. Give the name about 64% of the content width and put the intro alongside it. Keep the Document QA story in a readable single column. Use a shorter title column and a wider detail column for experience, other project summaries, education, and contact. Use three columns inside the technical skills disclosure. |
 | Tablet, 768–1023px | Stack the name and introduction, use two skill columns, and allow the header to wrap. |
 | Mobile, below 768px | Use one column. Keep the home link and theme switch in the first header row, and the navigation links below it. Allow navigation, steps, metadata and actions to wrap at 320px. |
 | Spacing | Separate sections and project entries with whitespace and type hierarchy. Set the section spacing unit to 76px on desktop and 48px on mobile. Align the name to the page content margin. |
 | Display | DIN Condensed Bold. Name 140px at 1280px, 68px at 390px, and 62px at 320px. Use a line-height of about 0.85 and allow additional lines with larger user settings. Use 72px desktop and 52px mobile for section headings, 46px desktop and 42px mobile for the experience summary, and 48px desktop and 41px mobile for the featured project. |
 | Reading and controls | Verdana regular for body at 17px with 27–28px line-height. Use 16px for skill lists, 19–21px bold for project and role labels, and at least 14px for navigation, controls, stacks, and dates. Specify sizes with rem, and keep long reading blocks to about 66–75 characters. |
-| Components | Use square action buttons. Let the example label and spacing distinguish the fictional example. Group each project heading with its description. |
+| Components | Use square action buttons. Group each project heading with its description. |
 
 ### Theme colors and contrast
 
@@ -133,10 +132,6 @@ Use the heading **Let’s talk** and the line “Open to full-time roles and fre
 | Text on orange | Pure white `#FFFFFF` | Pure white `#FFFFFF` |
 
 The three colors above are the complete design palette. Use solid fills and maintain the same orange in both themes. Contrast ratios from the WCAG relative luminance formula are **21:1** for black and white, **4.56:1** for orange and white, and **4.60:1** for orange and black. Each pair meets WCAG AA for normal text and the 3:1 threshold for control boundaries. Use a 2px focus outline in the current page text color with a 3px offset. Underline inline links and use an underline on action hover so the interaction does not depend on a new color. [WCAG minimum contrast](https://www.w3.org/TR/WCAG22/#contrast-minimum) · [WCAG non-text contrast](https://www.w3.org/TR/WCAG22/#non-text-contrast)
-
-### Motion
-
-Open the source passage with a native disclosure. The passage appears immediately, and its orange marker draws down once over 180ms. The mockup shows the expanded state. Use CSS and honor `prefers-reduced-motion` so the marker appears immediately when reduced motion is enabled. Keep the rest of the page still during scrolling. The source example and skills disclosure work with JavaScript off. [W3C guidance on animation from interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html)
 
 ## Interaction and accessibility review
 
