@@ -35,28 +35,29 @@
         <h1>Ajay Krishna <span>Anugu</span></h1>
         <div class="intro-copy">
           <p class="experience-summary">2+ years of experience</p>
-          <p>I build AI systems that help teams find answers in documents, check data quality, and protect personal information.</p>
+          <p>I turn documents and data into practical AI tools, from question answering to quality checks and privacy workflows.</p>
           <a class="action action-primary" href="#projects">View projects</a>
         </div>
       </div>
 
       <section id="projects" class="page-section" aria-labelledby="work-heading">
         <h2 id="work-heading">What I’ve built</h2>
-        <p class="employer">Built at Centific</p>
+        <p class="employer">AI applications and services built at Centific</p>
         <article class="featured-project" aria-labelledby="document-qa-heading">
           <div>
             <h3 id="document-qa-heading">Document question answering</h3>
+            <p class="project-lead">Find the right task requirement. Ask the document.</p>
             <dl class="project-story">
               <div>
-                <dt>The problem</dt>
-                <dd>Annotators needed to find specific task requirements in client-provided documents.</dd>
+                <dt>The challenge</dt>
+                <dd>Annotators needed specific requirements from client documents while working on annotation tasks.</dd>
               </div>
               <div>
-                <dt>What I built</dt>
-                <dd>I built a retrieval-augmented system that lets annotators look up task requirements by asking questions in natural language.</dd>
+                <dt>My contribution</dt>
+                <dd>I built a retrieval-augmented generation (RAG) system that finds relevant passages and uses them to answer questions in natural language.</dd>
               </div>
             </dl>
-            <p class="project-tools">LangChain, FAISS, Gradio</p>
+            <p class="project-tools">LangChain, OpenAI, FAISS, FastAPI, Gradio</p>
           </div>
 
           <fieldset class="workflow">
@@ -79,21 +80,45 @@
         </article>
 
         <div class="project-grid">
-          <article>
-            <h3>Data quality automation</h3>
-            <p>Built services for multilingual near-duplicate detection, semantic similarity, PII-related checks, word counts, and checks for AI-generated content in annotation workflows.</p>
+          <article aria-labelledby="data-quality-heading">
+            <h3 id="data-quality-heading">Data quality automation</h3>
+            <p class="project-lead">Spot repeated data across languages.</p>
+            <p>I built services that identify near-duplicates and semantically similar submissions across annotators and locales.</p>
+            <details class="project-details">
+              <summary>Explore the quality checks</summary>
+              <p>The services also cover personal-information checks, word counts, and checks for AI-generated content in annotation workflows.</p>
+            </details>
+            <p class="project-tools">Python, FastAPI, embedding models, NLP</p>
           </article>
-          <article>
-            <h3>Guideline Intelligence</h3>
-            <p>Contributed to a system that evaluates annotation outputs against client-provided task rules and guidelines.</p>
+          <article aria-labelledby="guideline-heading">
+            <h3 id="guideline-heading">Guideline Intelligence</h3>
+            <p class="project-lead">Turn task guidelines into evaluation criteria.</p>
+            <p>I contributed to an AI system that evaluates annotation outputs against client requirements.</p>
+            <details class="project-details">
+              <summary>Explore the evaluation approach</summary>
+              <p>The system uses client guidelines alongside annotation outputs to assess whether the work follows the defined task rules.</p>
+            </details>
+            <p class="project-tools">Python, OpenAI, LangChain, FastAPI</p>
           </article>
-          <article>
-            <h3>Safe AI model evaluation and red-teaming</h3>
-            <p>Contributed to testing model behaviour across safety categories and building backend services for internal platform integration.</p>
+          <article aria-labelledby="safe-ai-heading">
+            <h3 id="safe-ai-heading">Safe AI model evaluation and red-teaming</h3>
+            <p class="project-lead">Examine how AI models behave under safety tests.</p>
+            <p>I contributed to model evaluation and red-teaming research for Centific’s AI Data Foundry.</p>
+            <details class="project-details">
+              <summary>Explore my contribution</summary>
+              <p>My work included testing model behaviour across defined safety categories and building backend services to integrate evaluation capabilities into the internal platform.</p>
+            </details>
+            <p class="project-tools">Python, FastAPI, OpenAI, Azure, Docker</p>
           </article>
-          <article>
-            <h3>Data anonymisation</h3>
-            <p>Contributed to a completed pipeline to detect and mask or remove personally identifiable information from data used in AI and reinforcement learning workflows.</p>
+          <article aria-labelledby="privacy-heading">
+            <h3 id="privacy-heading">Data anonymisation</h3>
+            <p class="project-lead">Prepare AI training data with privacy in mind.</p>
+            <p>I contributed to a pipeline that detects personal information and masks or removes it before downstream use.</p>
+            <details class="project-details">
+              <summary>Explore the privacy workflow</summary>
+              <p>The completed pipeline supports data preparation for AI training, reinforcement learning, and task-generation workflows using NLP and PII-detection models.</p>
+            </details>
+            <p class="project-tools">Python, FastAPI, NLP/PII models, SQL</p>
           </article>
         </div>
       </section>
@@ -106,7 +131,7 @@
             <p class="employer">Centific</p>
             <p class="date"><time datetime="2024-08">August 2024</time> – <time datetime="2026-11">November 2026</time></p>
           </div>
-          <p>Built Python and FastAPI services for human-in-the-loop annotation and AI research. Deployed those services with Docker and CI/CD on Azure and integrated them with PostgreSQL and SQL Server.</p>
+          <p>Across AI solutions and research teams, I built Python and FastAPI services for data annotation and AI workflows. My work extended from model integration to deployment on Azure with Docker and CI/CD, using PostgreSQL and SQL Server.</p>
         </div>
       </section>
 

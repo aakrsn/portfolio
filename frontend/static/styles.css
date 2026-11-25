@@ -396,6 +396,42 @@ h1 span {
   margin-block-start: 0.5rem;
 }
 
+.project-lead {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.featured-project .project-lead {
+  margin-block-start: 0.875rem;
+}
+
+.project-grid h3 {
+  color: var(--orange);
+}
+
+.project-details {
+  margin-block-start: 0.75rem;
+}
+
+.project-details summary {
+  display: list-item;
+  inline-size: fit-content;
+  min-block-size: 44px;
+  padding-block: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.project-details[open] summary {
+  text-decoration: underline;
+  text-underline-offset: 0.23em;
+}
+
+.project-grid .project-tools {
+  margin-block-start: 0.875rem;
+  font-weight: 400;
+}
+
 summary {
   cursor: pointer;
 }

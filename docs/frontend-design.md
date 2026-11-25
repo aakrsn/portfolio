@@ -61,24 +61,27 @@ What I’ve built → Experience → Skills → Let’s talk
 The header home link reads **AI/ML Engineer** and links to the top of the page at `/`. Header links read **Work**, **Experience**, **Skills**, and **Contact** and use the approved section anchors in that order. **Work** leads to `#projects`. The theme button reads **Dark mode** and uses an unboxed label with a compact state indicator.
 
 - **Name and experience** — Ajay Krishna Anugu · 2+ years of experience. Visually uppercase the name while keeping its natural capitalization in the document text.
-- **Introduction** — I build AI systems that help teams find answers in documents, check data quality, and protect personal information.
+- **Introduction** — I turn documents and data into practical AI tools, from question answering to quality checks and privacy workflows.
 - **Action** — **View projects** goes to `#projects`.
 
 ### What I’ve built · `#projects`
 
-Lead with Document QA. Identify Centific as the employer for all five entries, and keep the four other projects as short contribution summaries.
+Lead with Document QA and identify Centific as the employer for all five entries. Keep the current featured-project layout and two-column project grid, stacking on mobile.
 
-- **The problem** — Annotators needed to find specific task requirements in client-provided documents.
-- **What I built** — I built a retrieval-augmented system that lets annotators look up task requirements by asking questions in natural language.
-- **Tools** — LangChain, FAISS, Gradio.
+- **Featured lead** — Find the right task requirement. Ask the document.
+- **The challenge** — Annotators needed specific requirements from client documents while working on annotation tasks.
+- **My contribution** — I built a retrieval-augmented generation (RAG) system that finds relevant passages and uses them to answer questions in natural language.
+- **Tools** — LangChain, OpenAI, FAISS, FastAPI, Gradio.
 - **How it works** — Present **Ask**, **Retrieve**, and **Answer** as a native radio group. Start on Ask. Each step shows a brief explanation of the real workflow. Visitors can select a step by tapping or with the keyboard. The orange highlight slides to the selected step over 180ms and switches instantly with reduced motion enabled.
 
-| Project | Contribution |
-| --- | --- |
-| **Data quality automation** | Built services for multilingual near-duplicate detection, semantic similarity, PII-related checks, word counts, and checks for AI-generated content in annotation workflows. |
-| **Guideline Intelligence** | Contributed to a system that evaluates annotation outputs against client-provided task rules and guidelines. |
-| **Safe AI model evaluation and red-teaming** | Contributed to testing model behaviour across safety categories and building backend services for internal platform integration. |
-| **Data anonymisation** | Contributed to a completed pipeline to detect and mask or remove personally identifiable information from data used in AI and reinforcement learning workflows. |
+Each other project has an orange project title, a bold purpose statement, a short first-person contribution, a native disclosure for supporting detail, and a compact tool list. The disclosures work without JavaScript and use descriptive summaries with visible keyboard focus. Preserve the distinction between work Ajay built and work he contributed to. Do not introduce unverified metrics or claims of guaranteed accuracy or privacy.
+
+| Project | Purpose | Supporting detail |
+| --- | --- | --- |
+| Data quality automation | Spot repeated data across languages. | Near-duplicate and semantic similarity services, with additional personal-information, word-count, and AI-generated-content checks. |
+| Guideline Intelligence | Turn task guidelines into evaluation criteria. | Contribution to evaluating annotation outputs against client rules and requirements. |
+| Safe AI model evaluation and red-teaming | Examine how AI models behave under safety tests. | Model evaluation research, safety-category testing, and backend integration for AI Data Foundry. |
+| Data anonymisation | Prepare AI training data with privacy in mind. | Contribution to a completed pipeline that detects and masks or removes PII for downstream AI/RL and task-generation workflows. |
 
 ### Experience · `#experience`
 
@@ -86,7 +89,7 @@ Lead with Document QA. Identify Centific as the employer for all five entries, a
 
 **August 2024 – November 2026**
 
-Built Python and FastAPI services for human-in-the-loop annotation and AI research. Deployed those services with Docker and CI/CD on Azure and integrated them with PostgreSQL and SQL Server.
+Across AI solutions and research teams, I built Python and FastAPI services for data annotation and AI workflows. My work extended from model integration to deployment on Azure with Docker and CI/CD, using PostgreSQL and SQL Server.
 
 ### Skills and education · `#skills`
 
