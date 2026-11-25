@@ -268,7 +268,10 @@ h1 span {
 }
 
 .featured-project {
-  margin-block: 2rem 1.75rem;
+  display: grid;
+  align-items: start;
+  gap: 1.75rem;
+  margin-block: 2rem 2.5rem;
 }
 
 #document-qa-heading {
@@ -296,6 +299,103 @@ h1 span {
   margin-block-start: 0.875rem;
 }
 
+.workflow {
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.workflow legend {
+  padding: 0;
+  font-weight: 700;
+}
+
+.workflow-steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-block-start: 0.75rem;
+}
+
+.workflow-steps input {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: 0;
+  clip-path: inset(50%);
+}
+
+.workflow-steps label {
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-block-size: 44px;
+  padding: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.workflow-steps label:hover {
+  text-decoration: underline;
+}
+
+.workflow-steps input:focus-visible + label {
+  outline: 2px solid var(--foreground);
+  outline-offset: -2px;
+}
+
+.workflow-highlight {
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  inset: 0;
+  background: var(--orange);
+  pointer-events: none;
+}
+
+#workflow-retrieve:checked ~ .workflow-highlight {
+  transform: translateX(100%);
+}
+
+#workflow-answer:checked ~ .workflow-highlight {
+  transform: translateX(200%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .workflow-highlight {
+    transition: transform 180ms ease-out;
+  }
+}
+
+.workflow-notes {
+  display: grid;
+  grid-column: 1 / -1;
+  margin-block-start: 0.75rem;
+}
+
+.workflow-notes p {
+  grid-area: 1 / 1;
+  visibility: hidden;
+}
+
+#workflow-ask:checked ~ .workflow-notes #workflow-ask-note,
+#workflow-retrieve:checked ~ .workflow-notes #workflow-retrieve-note,
+#workflow-answer:checked ~ .workflow-notes #workflow-answer-note {
+  visibility: visible;
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-grid p {
+  max-inline-size: 58ch;
+  margin-block-start: 0.5rem;
+}
+
 summary {
   cursor: pointer;
 }
@@ -309,14 +409,8 @@ summary::marker {
   gap: 0.5rem;
 }
 
-.project-row,
 .education {
-  padding-block: 1.125rem 1.75rem;
-}
-
-.project-row:last-child,
-.education {
-  padding-block-end: 0;
+  padding-block-start: 1.125rem;
 }
 
 .experience,
@@ -390,6 +484,11 @@ summary::marker {
     font-size: clamp(5.75rem, 10.94vw, 8.75rem);
   }
 
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem 3rem;
+  }
+
   .skill-groups {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -437,6 +536,12 @@ summary::marker {
     font-size: 3rem;
   }
 
+  .featured-project {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
+    gap: 4rem;
+    margin-block-end: 3.25rem;
+  }
+
   .split-row {
     grid-template-columns: minmax(0, 2fr) minmax(0, 5fr);
     column-gap: 2.5rem;
@@ -455,6 +560,14 @@ summary::marker {
   .theme-indicator::before {
     forced-color-adjust: none;
     background: CanvasText;
+  }
+
+  .workflow-highlight {
+    display: none;
+  }
+
+  .workflow-steps input:checked + label {
+    text-decoration: underline;
   }
 
   :focus-visible {

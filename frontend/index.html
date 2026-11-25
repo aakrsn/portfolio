@@ -44,36 +44,58 @@
         <h2 id="work-heading">What I’ve built</h2>
         <p class="employer">Built at Centific</p>
         <article class="featured-project" aria-labelledby="document-qa-heading">
-          <h3 id="document-qa-heading">Document question answering</h3>
-          <dl class="project-story">
-            <div>
-              <dt>The problem</dt>
-              <dd>Annotators needed to find specific task requirements in client-provided documents.</dd>
+          <div>
+            <h3 id="document-qa-heading">Document question answering</h3>
+            <dl class="project-story">
+              <div>
+                <dt>The problem</dt>
+                <dd>Annotators needed to find specific task requirements in client-provided documents.</dd>
+              </div>
+              <div>
+                <dt>What I built</dt>
+                <dd>I built a retrieval-augmented system that lets annotators look up task requirements by asking questions in natural language.</dd>
+              </div>
+            </dl>
+            <p class="project-tools">LangChain, FAISS, Gradio</p>
+          </div>
+
+          <fieldset class="workflow">
+            <legend>How it works</legend>
+            <div class="workflow-steps">
+              <input type="radio" id="workflow-ask" name="workflow" aria-describedby="workflow-ask-note" checked>
+              <label for="workflow-ask">Ask</label>
+              <input type="radio" id="workflow-retrieve" name="workflow" aria-describedby="workflow-retrieve-note">
+              <label for="workflow-retrieve">Retrieve</label>
+              <input type="radio" id="workflow-answer" name="workflow" aria-describedby="workflow-answer-note">
+              <label for="workflow-answer">Answer</label>
+              <span class="workflow-highlight" aria-hidden="true"></span>
+              <div class="workflow-notes">
+                <p id="workflow-ask-note">Annotators ask about a task requirement in their own words.</p>
+                <p id="workflow-retrieve-note">The system searches the indexed documents for passages relevant to the question.</p>
+                <p id="workflow-answer-note">The model uses those passages as context to answer the question.</p>
+              </div>
             </div>
-            <div>
-              <dt>What I built</dt>
-              <dd>I built a retrieval-augmented question-answering system that finds relevant passages and uses them to answer annotators’ questions.</dd>
-            </div>
-          </dl>
-          <p class="project-tools">LangChain, FAISS, Gradio</p>
+          </fieldset>
         </article>
 
-        <article class="project-row split-row">
-          <h3>Data quality automation</h3>
-          <p>Built services for multilingual near-duplicate detection, semantic similarity, PII-related checks, word counts, and checks for AI-generated content in annotation workflows.</p>
-        </article>
-        <article class="project-row split-row">
-          <h3>Guideline Intelligence</h3>
-          <p>Contributed to a system that evaluates annotation outputs against client-provided task rules and guidelines.</p>
-        </article>
-        <article class="project-row split-row">
-          <h3>Safe AI model evaluation and red-teaming</h3>
-          <p>Contributed to testing model behaviour across safety categories and building backend services for internal platform integration.</p>
-        </article>
-        <article class="project-row split-row">
-          <h3>Data anonymisation</h3>
-          <p>Contributed to a completed pipeline to detect and mask or remove personally identifiable information from data used in AI and reinforcement learning workflows.</p>
-        </article>
+        <div class="project-grid">
+          <article>
+            <h3>Data quality automation</h3>
+            <p>Built services for multilingual near-duplicate detection, semantic similarity, PII-related checks, word counts, and checks for AI-generated content in annotation workflows.</p>
+          </article>
+          <article>
+            <h3>Guideline Intelligence</h3>
+            <p>Contributed to a system that evaluates annotation outputs against client-provided task rules and guidelines.</p>
+          </article>
+          <article>
+            <h3>Safe AI model evaluation and red-teaming</h3>
+            <p>Contributed to testing model behaviour across safety categories and building backend services for internal platform integration.</p>
+          </article>
+          <article>
+            <h3>Data anonymisation</h3>
+            <p>Contributed to a completed pipeline to detect and mask or remove personally identifiable information from data used in AI and reinforcement learning workflows.</p>
+          </article>
+        </div>
       </section>
 
       <section id="experience" class="page-section" aria-labelledby="experience-heading">

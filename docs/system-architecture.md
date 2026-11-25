@@ -22,6 +22,8 @@ The file-based design fits a single read-only portfolio and keeps edits in Git. 
 
 CSS follows the visitor’s `prefers-color-scheme` setting by default. A keyboard-operable theme button switches the theme immediately and stores the visitor’s choice in browser `localStorage` when available. Page content and links remain usable if JavaScript or storage is unavailable. [CSS color preference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40media/prefers-color-scheme) · [Browser local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
+The Document QA workflow uses three native radio controls and CSS to show the selected step. The highlight moves after a selection and switches instantly with reduced motion enabled. The interaction works without JavaScript or server requests.
+
 ## Résumé and publication boundary
 
 Keep the locally supplied `ajaykrishna_resume.docx` outside Git and the deploy artifact. If it remains beside the project brief during implementation, add `/ajaykrishna_resume.docx` to the project’s `.gitignore` before staging. Use it to draft accurate, owner-approved public HTML. Publish only approved contact channels and project links. If a downloadable résumé is wanted, export a reviewed PDF, check its content and metadata for private information, and commit that public derivative at `frontend/resume.pdf`. Deploy the application from the project repository so the deployment can be built without the DOCX. [GitHub documentation on ignoring files](https://docs.github.com/en/get-started/git-basics/ignoring-files)

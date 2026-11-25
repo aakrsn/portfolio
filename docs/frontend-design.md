@@ -38,8 +38,8 @@ Desktop
 [AI/ML Engineer]              [Work  Experience  Skills  Contact] [Dark mode]
 AJAY KRISHNA                   2+ years of experience
 ANUGU                          Intro and View projects
-What I’ve built                Document QA case study
-                              Four other Centific projects
+What I’ve built                Document QA case study and workflow
+                              Two-column grid of other Centific projects
 Experience                    Role, dates and deployment scope
 Skills                        Short summary, technical skills disclosure, education
 Let’s talk                    Email, LinkedIn and Phone
@@ -69,8 +69,9 @@ The header home link reads **AI/ML Engineer** and links to the top of the page a
 Lead with Document QA. Identify Centific as the employer for all five entries, and keep the four other projects as short contribution summaries.
 
 - **The problem** — Annotators needed to find specific task requirements in client-provided documents.
-- **What I built** — I built a retrieval-augmented question-answering system that finds relevant passages and uses them to answer annotators’ questions.
+- **What I built** — I built a retrieval-augmented system that lets annotators look up task requirements by asking questions in natural language.
 - **Tools** — LangChain, FAISS, Gradio.
+- **How it works** — Present **Ask**, **Retrieve**, and **Answer** as a native radio group. Start on Ask. Each step shows a brief explanation of the real workflow. Visitors can select a step by tapping or with the keyboard. The orange highlight slides to the selected step over 180ms and switches instantly with reduced motion enabled.
 
 | Project | Contribution |
 | --- | --- |
@@ -114,8 +115,8 @@ Use the heading **Let’s talk** and the line “Open to full-time roles and fre
 | Element | Specification |
 | --- | --- |
 | Content width | 1120px maximum. Use 20px mobile gutters and at least 32px from 768px. |
-| Desktop, 1024px and up | Use one header row. Give the name about 64% of the content width and put the intro alongside it. Keep the Document QA story in a readable single column. Use a shorter title column and a wider detail column for experience, other project summaries, education, and contact. Use three columns inside the technical skills disclosure. |
-| Tablet, 768–1023px | Stack the name and introduction, use two skill columns, and allow the header to wrap. |
+| Desktop, 1024px and up | Use one header row. Give the name about 64% of the content width and put the intro alongside it. Place the Document QA story beside its workflow and give the other projects a two-column grid. Use a shorter title column and a wider detail column for experience, education, and contact. Use three columns inside the technical skills disclosure. |
+| Tablet, 768–1023px | Stack the name, introduction, and featured project. Use two columns for the other projects and skills. Allow the header to wrap. |
 | Mobile, below 768px | Use one column. Keep the home link and theme switch in the first header row, and the navigation links below it. Allow navigation, steps, metadata and actions to wrap at 320px. |
 | Spacing | Separate sections and project entries with whitespace and type hierarchy. Set the section spacing unit to 76px on desktop and 48px on mobile. Align the name to the page content margin. |
 | Display | DIN Condensed Bold. Name 140px at 1280px, 68px at 390px, and 62px at 320px. Use a line-height of about 0.85 and allow additional lines with larger user settings. Use 72px desktop and 52px mobile for section headings, 46px desktop and 42px mobile for the experience summary, and 48px desktop and 41px mobile for the featured project. |
